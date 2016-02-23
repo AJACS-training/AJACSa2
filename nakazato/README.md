@@ -1,8 +1,8 @@
 # AJACSa2
 
-情報・システム研究機構（ROIS）  
-ライフサイエンス統合データベースセンター（DBCLS）  
-[仲里 猛留](http://data.dbcls.jp/~nakazato/)   nakazato@dbcls.rois.ac.jp  
+情報・システム研究機構（ROIS）
+ライフサイエンス統合データベースセンター（DBCLS）
+[仲里 猛留](http://data.dbcls.jp/~nakazato/)   nakazato@dbcls.rois.ac.jp
 twitter: @chalkless
 
 2016年2月25日・26日 AJACSa2
@@ -13,12 +13,27 @@ twitter: @chalkless
 
 ----
 
+## やったこと（ここまでの復習）
+- 解析したいNGSデータ（リード）の入手
+- レファレンス配列データの入手
+- NGSデータに対するクオリティチェック (FastQC)
+- トリミング：アダプター配列などの除去
+- レファレンス配列データへのNGSデータ（リード）のマッピング (tophat)
+
+## やること（予告）
+- 遺伝子発現量 (FPKM) の計算 (cufflinks)
+- サンプル間での遺伝子発現量の比較 (cuffmerge, cuffdiff)
+- 結果の解釈1：結果の可視化 (CummeRbund)
+- 結果の解釈2：生物学的な解釈 (DAVID)
+
 ## 遺伝子発現解析(4)
 トランスクリプトームアセンブリと発現差分解析 (cufflinks, cuffdiff)
 UNIXコマンドによるファイル操作
 
 ### やること（原理）
-遺伝子発現量(FPKM)の計算
+- 遺伝子発現量(FPKM)の計算
+- FPKM とは
+	- Fragments Per Kilobase of exon per Million mapped fragments
 
 ### インストールの確認
 p.98 を見られたし
