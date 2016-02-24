@@ -31,7 +31,7 @@
 ### NGSデータ解析
 -  坊農秀雅 **次世代シークエンサーにより得られたデータの解析** *領域融合レビュー*, **4**, e008 (2015) [DOI: 10.7875/leading.author.4.e008](http://doi.org/10.7875/leading.author.4.e008) 
 - 坊農秀雅 **次世代シーケンサーから得られたデータの使い方** 統合データベース講習会AJACS薩摩 [DOI: 10.7875/togotv.2016.040](http://doi.org/10.7875/togotv.2016.040)
-
+- バイオサイエンスデータベースセンター(NBDC) [平成27年度NGSハンズオン講習会の講義資料と動画(統合TV)](http://biosciencedbc.jp/human/human-resources/workshop/h27)
 
 --
 ## はじめに-NGSデータ解析の概要
