@@ -34,23 +34,36 @@ UNIXコマンドによるファイル操作
 - 遺伝子発現量(FPKM)の計算
 - FPKM とは
 	- Fragments Per Kilobase of exon per Million mapped fragments
+	- mapされたうちのその遺伝子にはりついたフラグメント（リード）の量
+	- 「何本」はりついたか数えるとはりつけた遺伝子の長さに依存するので長さで正規化していると思えばよろし
 
 ### インストールの確認
-p.98 を見られたし
+- cufflinksをインストールする（brewで）
+- p.98 を見られたし
+- インストールがうまくいかない人、cufflinksをかけ始めたら動かなかった人は適宜フォローします
 
 ### 遺伝子発現量(FPKM)の計算
-
-
+```
+$ cufflinks             ← $ はプロンプト（ここからコマンド入力という合図）
+      -p 8              ← プロセス数（同時に計算する数）
+      -g Homo_sapiens/.../genes.gtf     ← 遺伝子（exon）の情報
+      tophat/.../ERR266335_P0.bam       ← 対応させるNGSデータ
+      -o tophat/.../cufflinks_results   ← 出力先
+  ↑ 実際は1行で書くこと
+```
 
 途中経過
-
+```
 You are using Cufflinks v2.2.1, which is the most recent release.
 [13:58:44] Loading reference annotation.
 [13:58:53] Inspecting reads and determining fragment length distribution.
 > Processing Locus 19:46978770-46978870        [****                     ]  19%
+```
 
+この先、しばらくかかります
 
 最終結果
+```
 nakazato@grouper:~/lecture/ajacsa2/data/expression$ cufflinks -p 8 -g NGS_DAT/Lv2_2/iGenome/Homo_sapiens/NCBI/build37.2/Annotation/Archives/archive-2014-06-02-13-47-29/Genes/genes.gtf tophat/ERR266335_P0/ERR266335_P0.bam -o tophat/ERR266335_P0/cufflinks_results
 You are using Cufflinks v2.2.1, which is the most recent release.
 [13:58:44] Loading reference annotation.
