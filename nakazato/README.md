@@ -77,14 +77,23 @@ You are using Cufflinks v2.2.1, which is the most recent release.
 >	           Default Std Dev: 80
 [14:07:11] Assembling transcripts and estimating abundances.
 > Processed 307510 loci.                       [*************************] 100%
+```
 
 できたものを確認
+```
+$ ls -alF tophat/ERR266335_P0/cufflinks_result/
+
+```
+
+
 
 ファイルの中身
 
 
-cuffmurge
+### サンプル間での遺伝子発現量の比較(cuffmerge → cuffdiff)
 
+#### cuffmergeをかける
+```
 nakazato@grouper:~/lecture/ajacsa2/data/expression$ cuffmerge -p 8 -o fpkm_compare -g NGS_DAT/Lv2_2/iGenome/Homo_sapiens/NCBI/build37.2/Annotation/Archives/archive-2014-06-02-13-47-29/Genes/genes.gtf -s NGS_DAT/Lv2_2/iGenome/Homo_sapiens/NCBI/build37.2/Sequence/Bowtie2Index/genome.fa transcripts.gtf.txt 
 
 [Fri Feb 19 16:37:30 2016] Beginning transcriptome assembly merge
