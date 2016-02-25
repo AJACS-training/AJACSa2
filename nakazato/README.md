@@ -91,6 +91,7 @@ drwxr-xr-x  12 nakazato  staff        408  2 18 13:58 ../
 -rw-r--r--   1 nakazato  staff  115892616  2 18 15:14 transcripts.gtf
 ```
 この後、transcripts.gtfを使っていきます。
+
 ちなみにファイルの中身
 ```
 nakazato@grouper:~/lecture/ajacsa2$ head -5 /tophat/ERR266335_P0/cufflinks_results/transcripts.gtf 
@@ -155,6 +156,7 @@ Warning: No conditions are replicated, switching to 'blind' dispersion method
 [16:55:24] Inspecting maps and determining fragment length distributions.
 Segmentation fault: 11
 ```
+
 - 一般的に、-p で指定する値が大きいと落ちてしまうようだ → 数字を小さくしてみる
 - この場合、使っているMacのバージョンとcuffdiffのバージョンが合わないなどの原因であった。古いバージョン（2.1.1がよいらしい）で処理を行うとよいらしい。
 - 古いバージョンの利用
@@ -182,6 +184,7 @@ drwx------+ 30 nakazato  staff     1020  2 25 10:48 ../
 -rwxr-xr-x   1 nakazato  staff   358100  4 12  2013 gffread*
 -rwxr-xr-x   1 nakazato  staff  1975728  4 12  2013 gtf_to_sam*
 ```
+
 	- 特にコンパイルがいらないようだ。自分のディレクトリで動かせそう
 	- ↑ 簡単に言えばlsに-Fオプションをつけたときに cuffdiff* と * がついている。右のrwぁたりでx (execute) が含まれているから
 	- ↑ 逆に中にconfigureやmakefileみたいなファイルが含まれているとコンパイルという作業が必要でbrewで入れるのとかちあったりする
@@ -193,6 +196,7 @@ $ cp cuff* /usr/local/bin/      ←自分でダウンロードしたバイナリ
 $ cp gffread /usr/local/bin/
 $ cp gtf_to_sam /usr/local/bin  ←このあたりのcpを使うところはsudo cp ...とやってパスワードを入れないとダメかも
 ```
+
 	- 対応その2：Homebrewのものを置き換えない
 ```
 $ cd ~/expression
@@ -203,6 +207,7 @@ $ tools/cufflinks-2.1.1/cufflinks
 $ tools/cufflinks-2.1.1/cuffdiff -p 4 --upper-quartile-norm -o cuffdiff_result -L ...
   ↑ テキストのコマンドで cufflinks の部分を自分の入れた tools/cufflinks−2.1.1/cufflinks で置き換える
 ```
+
 ##### 改めましてcuffdiff をかける
 ```
 $ ../../pkgs/cufflinks-2.1.1/cuffdiff
@@ -213,6 +218,7 @@ $ ../../pkgs/cufflinks-2.1.1/cuffdiff
     fpkm_compare/merged.gtf       ←transcriptのアノテーションファイル
     tophat/ERR266335_P0/ERR266335_P0.bam tophat/ERR266349_P2/ERR266349_P2.bam ...   ←mapした.bamファイル（スペース区切り）
 ```
+
 終わると
 ```
 $ ls -alF cuffdiff_result/
@@ -257,6 +263,7 @@ R/Bioconductorによるデータ解析 (cummeRbund 他) P.117
 > cuff <- readCufflinks(extdataPath)
 ...
 ```
+
 インストールがうまくいっていないとここまででエラーが出るはずです
 あとはテキストどおりやるだけ
 
