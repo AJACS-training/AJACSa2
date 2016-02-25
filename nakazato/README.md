@@ -200,15 +200,67 @@ $ mkdir tools    ←ディレクトリ作成。適宜、自分の好きな名前
 $ cp ~/Downloads/cufflinks-2.1.1.OSX_x86_64 tools/cufflinks-2.1.1
 $ tools/cufflinks-2.1.1/cufflinks
 （説明が出たらOK）
-$ （テキストのコマンドで cufflinks の部分を自分の入れた tools/cufflinks−2.1.1/cufflinks で置き換える）
+$ tools/cufflinks-2.1.1/cuffdiff -p 4 --upper-quartile-norm -o cuffdiff_result -L ...
+  ↑ テキストのコマンドで cufflinks の部分を自分の入れた tools/cufflinks−2.1.1/cufflinks で置き換える
 ```
-
-
-
-
+##### 改めましてcuffdiff をかける
+```
+$ ../../pkgs/cufflinks-2.1.1/cuffdiff
+	-p 8          ←プロセス数
+    --upper-quartile-norm
+    -o cuffdiff_result    ←出力先
+    -L ERR266335_P0,ERR266349_P2,ERR266337_P5,...    ←ラベル（カンマ区切り）
+    fpkm_compare/merged.gtf       ←transcriptのアノテーションファイル
+    tophat/ERR266335_P0/ERR266335_P0.bam tophat/ERR266349_P2/ERR266349_P2.bam ...   ←mapした.bamファイル（スペース区切り）
+```
+終わると
+```
+$ ls -alF cuffdiff_result/
+total 1712432
+drwxr-xr-x  25 nakazato  staff        850  2 21 19:43 ./
+drwxr-xr-x  29 nakazato  staff        986  2 25 14:46 ../
+-rw-r--r--   1 nakazato  staff         53  2 22 02:55 bias_params.info
+-rw-r--r--   1 nakazato  staff    4716712  2 22 02:55 cds.count_tracking
+-rw-r--r--   1 nakazato  staff   29634077  2 22 02:55 cds.diff
+-rw-r--r--   1 nakazato  staff    5428268  2 22 02:55 cds.fpkm_tracking
+-rw-r--r--   1 nakazato  staff    9324264  2 22 02:55 cds.read_group_tracking
+-rw-r--r--   1 nakazato  staff   52405169  2 22 02:55 cds_exp.diff
+-rw-r--r--   1 nakazato  staff   99412471  2 22 02:55 gene_exp.diff
+-rw-r--r--   1 nakazato  staff    8347707  2 22 02:55 genes.count_tracking
+-rw-r--r--   1 nakazato  staff   10069722  2 22 02:55 genes.fpkm_tracking
+-rw-r--r--   1 nakazato  staff   17821487  2 22 02:55 genes.read_group_tracking
+-rw-r--r--   1 nakazato  staff  190099331  2 22 02:55 isoform_exp.diff
+-rw-r--r--   1 nakazato  staff   15778643  2 22 02:55 isoforms.count_tracking
+-rw-r--r--   1 nakazato  staff   19643069  2 22 02:55 isoforms.fpkm_tracking
+-rw-r--r--   1 nakazato  staff   36301736  2 22 02:55 isoforms.read_group_tracking
+-rw-r--r--   1 nakazato  staff   82215558  2 22 02:55 promoters.diff
+-rw-r--r--   1 nakazato  staff        604  2 22 02:55 read_groups.info
+-rw-r--r--   1 nakazato  staff        496  2 22 02:55 run.info
+-rw-r--r--   1 nakazato  staff  103707256  2 22 02:55 splicing.diff
+-rw-r--r--   1 nakazato  staff  126120668  2 22 02:55 tss_group_exp.diff
+-rw-r--r--   1 nakazato  staff   10766455  2 22 02:55 tss_groups.count_tracking
+-rw-r--r--   1 nakazato  staff   12691139  2 22 02:55 tss_groups.fpkm_tracking
+-rw-r--r--   1 nakazato  staff   22466935  2 22 02:55 tss_groups.read_group_tracking
+-rw-r--r--   1 nakazato  staff   19757769  2 21 20:26 var_model.info
+```
+→ この結果をcummeRbundで可視化していきます
 
 ## 遺伝子発現解析(5)
-R/Bioconductorによるデータ解析 (cummeRbund 他)
+R/Bioconductorによるデータ解析 (cummeRbund 他) P.117
+
+とりあえずcummeRbundの読み込みまでやってみましょう
+```
+> biocLite("cummeRbund)
+> library("cummeRbund")
+> setwd("~/expression/cuffdiffresult")        ←今どこにいるかRに教える
+> extdataPath <- paste("~/expression/cuffdiff_result/", sep = " ")
+> cuff <- readCufflinks(extdataPath)
+...
+```
+インストールがうまくいっていないとここまででエラーが出るはずです
+あとはテキストどおりやるだけ
 
 ## 遺伝子発現解析(6)
 エンリッチメント解析 (DAVID)
+
+生物学的な解釈をします
