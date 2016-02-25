@@ -154,6 +154,43 @@ Segmentation fault: 11
 	- tar xvzf cufflinks-2.1.1.OSX_x86_64.tar.gz  ← 解凍
 	- cd cufflinks-2.1.1.OSX_x86_64  ← 解凍したディレクトリに移動
 	- ls -alF
+```
+$ ls -alF ~/Downloads/cufflinks-2.1.1.OSX_x86_64
+total 17592
+drwxr-xr-x  11 nakazato  staff      374  4 11  2013 ./
+drwx------+ 30 nakazato  staff     1020  2 25 10:48 ../
+-rw-r--r--   1 nakazato  staff      779  4 12  2013 AUTHORS
+-rw-r--r--   1 nakazato  staff     1516  4 12  2013 LICENSE
+-rw-r--r--   1 nakazato  staff     3536  4 12  2013 README
+-rwxr-xr-x   1 nakazato  staff   479000  4 12  2013 cuffcompare*
+-rwxr-xr-x   1 nakazato  staff  2988380  4 12  2013 cuffdiff*
+-rwxr-xr-x   1 nakazato  staff  3164668  4 12  2013 cufflinks*
+-rwxr-xr-x   1 nakazato  staff    19352  4 12  2013 cuffmerge*
+-rwxr-xr-x   1 nakazato  staff   358100  4 12  2013 gffread*
+-rwxr-xr-x   1 nakazato  staff  1975728  4 12  2013 gtf_to_sam*
+```
+	- 特にコンパイルがいらないようだ。自分のディレクトリで動かせそう
+	- ↑ 簡単に言えばlsに-Fオプションをつけたときに cuffdiff* と * がついている。右のrwぁたりでx (execute) が含まれているから
+	- ↑ 逆に中にconfigureやmakefileみたいなファイルが含まれているとコンパイルという作業が必要でbrewで入れるのとかちあったりする
+	- 対応その1：Homebrewのものを置き換える（p.114参照）
+```
+$ brew uninstall cufflinks      ←Homebrewでインストールしたcufflinksを消す
+$ cd .../cufflinks−2.1.1.OSX_x86_64  ← ...の部分は自分の場合に置き換えてください
+$ cp cuff* /usr/local/bin/      ←自分でダウンロードしたバイナリをインストール
+$ cp gffread /usr/local/bin/
+$ cp gtf_to_sam /usr/local/bin  ←このあたりのcpを使うところはsudo cp ...とやってパスワードを入れないとダメかも
+```
+	- 対応その2：Homebrewのものを置き換えない
+```
+$ cd ~/expression
+$ mkdir tools    ←ディレクトリ作成。適宜、自分の好きな名前をつける
+$ cp ~/Downloads/cufflinks-2.1.1.OSX_x86_64 tools/cufflinks-2.1.1
+$ tools/cufflinks-2.1.1/cufflinks
+（説明が出たらOK）
+$ （テキストのコマンドで cufflinks の部分を自分の入れた tools/cufflinks−2.1.1/cufflinks で置き換える）
+```
+
+
 
 
 
