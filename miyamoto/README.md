@@ -1,3 +1,4 @@
+- データセットとライセンスを希望される人はsupport@clcbio.co.jp まで連絡いただければ、対応します。
 ![images/AJACSa2_miyamoto_01.jpg](images/AJACSa2_miyamoto_01.jpg)
 ---
 
@@ -423,4 +424,3 @@
 
 ![images/AJACSa2_miyamoto_99.jpg](images/AJACSa2_miyamoto_99.jpg)
 ---
-
