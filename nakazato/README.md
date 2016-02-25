@@ -82,12 +82,25 @@ You are using Cufflinks v2.2.1, which is the most recent release.
 できたものを確認
 ```
 $ ls -alF tophat/ERR266335_P0/cufflinks_result/
-
+total 245336
+drwxr-xr-x   6 nakazato  staff        204  2 18 14:07 ./
+drwxr-xr-x  12 nakazato  staff        408  2 18 13:58 ../
+-rw-r--r--   1 nakazato  staff    3535499  2 18 15:14 genes.fpkm_tracking
+-rw-r--r--   1 nakazato  staff    6170594  2 18 15:14 isoforms.fpkm_tracking
+-rw-r--r--   1 nakazato  staff        156  2 18 15:14 skipped.gtf
+-rw-r--r--   1 nakazato  staff  115892616  2 18 15:14 transcripts.gtf
 ```
-
-
-
-ファイルの中身
+この後、transcripts.gtfを使っていきます。
+ちなみにファイルの中身
+```
+nakazato@grouper:~/lecture/ajacsa2$ head -5 /tophat/ERR266335_P0/cufflinks_results/transcripts.gtf 
+1       Cufflinks       transcript      12190   13639   1000    +       .     gene_id "CUFF.1"; transcript_id "XM_003403543.1"; FPKM "0.0571220870"; frac "1.000000"; conf_lo "0.000000"; conf_hi "0.228488"; cov "0.332929"; full_read_support "no";
+1       Cufflinks       exon    12190   12227   1000    +       .       gene_id "CUFF.1"; transcript_id "XM_003403543.1"; exon_number "1"; FPKM "0.0571220870"; frac "1.000000"; conf_lo "0.000000"; conf_hi "0.228488"; cov "0.332929";
+1       Cufflinks       exon    12595   12721   1000    +       .       gene_id "CUFF.1"; transcript_id "XM_003403543.1"; exon_number "2"; FPKM "0.0571220870"; frac "1.000000"; conf_lo "0.000000"; conf_hi "0.228488"; cov "0.332929";
+1       Cufflinks       exon    13403   13639   1000    +       .       gene_id "CUFF.1"; transcript_id "XM_003403543.1"; exon_number "3"; FPKM "0.0571220870"; frac "1.000000"; conf_lo "0.000000"; conf_hi "0.228488"; cov "0.332929";
+1       Cufflinks       transcript      34611   36081   1000    -       .     gene_id "FAM138A"; transcript_id "NR_026818.1"; FPKM "0.0357377812"; frac "1.000000"; conf_lo "0.000000"; conf_hi "0.088021"; cov "0.186422"; full_read_support "no";
+（先頭の5行のみ表示。全部 見るならless さらに桁折りしないなら less -S transcripts.gtfとする）
+```
 
 
 ### サンプル間での遺伝子発現量の比較(cuffmerge → cuffdiff)
