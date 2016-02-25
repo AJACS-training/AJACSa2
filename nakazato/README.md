@@ -129,30 +129,31 @@ Processed 48059 loci.
 
 
 Warning: couldn't find fasta record for '1|NT_167207.1'!
+```
 
+#### cuffdiffをかける
 
-
-
+##### cuffdiff でうまくいかない例
+```
 nakazato@grouper:~/lecture/ajacsa2/data/expression$ cuffdiff -p 4 --upper-quartile-norm -o cuffdiff_result -L ERR266335_P0,ERR266349_P2,ERR266337_P5,ERR266351_P7,ERR266338_P10,ERR266247_Adult fpkm_compare/merged.gtf tophat/ERR266335_P0/ERR266335_P0.bam tophat/ERR266349_P2/ERR266349_P2.bam tophat/ERR266337_P5/ERR266337_P5.bam tophat/ERR266351_P7/ERR266351_P7.bam tophat/ERR266338_P10/ERR266338_P10.bam tophat/ERR266347_Adult/ERR266347_Adult.bam 
 You are using Cufflinks v2.2.1, which is the most recent release.
 [16:55:12] Loading reference annotation.
 Warning: No conditions are replicated, switching to 'blind' dispersion method
 [16:55:24] Inspecting maps and determining fragment length distributions.
 Segmentation fault: 11
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
+- 一般的に、-p で指定する値が大きいと落ちてしまうようだ → 数字を小さくしてみる
+- この場合、使っているMacのバージョンとcuffdiffのバージョンが合わないなどの原因であった。古いバージョン（2.1.1がよいらしい）で処理を行うとよいらしい。
+- 古いバージョンの利用
+	- cuffdiff でGoogle検索
+	- http://cole-trapnell-lab.github.io/cufflinks/cuffdiff/ が見つかる
+	- 一番上のバーの install からダウンロードページへ（cuffdiffだがcufflinksに入っているのでcufflinksのダウンロードでよい）
+	- 2.1.1 のMacOSのを落とす
+	- cufflinks-2.1.1.OSX_x86_64.tar.gz がダウンロードされる
+	- cd ダウンロードしたディレクトリ（例：cd ~/Downloads/）
+	- tar xvzf cufflinks-2.1.1.OSX_x86_64.tar.gz  ← 解凍
+	- cd cufflinks-2.1.1.OSX_x86_64  ← 解凍したディレクトリに移動
+	- ls -alF
 
 
 
