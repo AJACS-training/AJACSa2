@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-![images/AJACSa2_morioka_01.jpg](images/AJACSa2_morioka_01.jpg)
----
-
-![images/AJACSa2_morioka_02.jpg](images/AJACSa2_morioka_02.jpg)
----
-
-![images/AJACSa2_morioka_03.jpg](images/AJACSa2_morioka_03.jpg)
----
-
-![images/AJACSa2_morioka_04.jpg](images/AJACSa2_morioka_04.jpg)
----
-
-![images/AJACSa2_morioka_05.jpg](images/AJACSa2_morioka_05.jpg)
----
-
-![images/AJACSa2_morioka_06.jpg](images/AJACSa2_morioka_06.jpg)
----
-
-![images/AJACSa2_morioka_07.jpg](images/AJACSa2_morioka_07.jpg)
----
-
-![images/AJACSa2_morioka_08.jpg](images/AJACSa2_morioka_08.jpg)
----
-
-![images/AJACSa2_morioka_09.jpg](images/AJACSa2_morioka_09.jpg)
----
-
-![images/AJACSa2_morioka_10.jpg](images/AJACSa2_morioka_10.jpg)
----
 =======
 # AJACSa2
 
@@ -71,6 +41,33 @@ GSM1326446
 GSM916973
 ```
 
+### Slides
+![images/AJACSa2_morioka_01.jpg](images/AJACSa2_morioka_01.jpg)
+---
 
->>>>>>> e8e4f698d8e0873fa6941ea9013708767610eae3
+![images/AJACSa2_morioka_02.jpg](images/AJACSa2_morioka_02.jpg)
+---
 
+![images/AJACSa2_morioka_03.jpg](images/AJACSa2_morioka_03.jpg)
+---
+
+![images/AJACSa2_morioka_04.jpg](images/AJACSa2_morioka_04.jpg)
+---
+
+![images/AJACSa2_morioka_05.jpg](images/AJACSa2_morioka_05.jpg)
+---
+
+![images/AJACSa2_morioka_06.jpg](images/AJACSa2_morioka_06.jpg)
+---
+
+![images/AJACSa2_morioka_07.jpg](images/AJACSa2_morioka_07.jpg)
+---
+
+![images/AJACSa2_morioka_08.jpg](images/AJACSa2_morioka_08.jpg)
+---
+
+![images/AJACSa2_morioka_09.jpg](images/AJACSa2_morioka_09.jpg)
+---
+
+![images/AJACSa2_morioka_10.jpg](images/AJACSa2_morioka_10.jpg)
+---
