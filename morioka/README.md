@@ -17,7 +17,8 @@
 	- [fastqc, picardtools, intersectBed](https://github.com/suimye/NGS_handson2015/wiki/NGS_beginner)
 	- [NGSplotの使い方とNGSplotによるQC](https://github.com/suimye/NGS_handson2015/wiki/NGSplotsOnBiolinux8)
 - [IGVの使い方(主に、TDFファイルを作る)](https://github.com/suimye/NGS_handson2015/wiki/ChIP-seq%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E5%8F%AF%E8%A6%96%E5%8C%96)
-- [ChIP-seqデータの統合解析の方法](https://github.com/suimye/NGS_handson2015/wiki/Homer_Data_integration)
+- [ChIP-seqデータの統合解析の方法 (Homer)](https://github.com/suimye/NGS_handson2015/wiki/Homer_Data_integration)
+- [ChIP-seqデータの統合方法 (Ngsplot)](https://github.com/suimye/NGS_handson2015/wiki/Ngsplot_data_integration)
 - [MEME suiteの使い方](https://github.com/suimye/NGS_handson2015/wiki/PeakCallAndMDA)
 
 [![https://gyazo.com/5d148e75be600dd295730cb82560fe19](https://i.gyazo.com/5d148e75be600dd295730cb82560fe19.png)](https://gyazo.com/5d148e75be600dd295730cb82560fe19)
