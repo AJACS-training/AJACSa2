@@ -25,12 +25,12 @@ JSTのバイオサイエンスデータベースセンター(NBDC)では、統�
 坊農 秀雅  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)
 
-13:00～18:00 「[講習 3コマ(同2,3,4)](https://github.com/AJACS-training/AJACSa2/blob/master/omomo/)」  
+13:00～18:00 「[インストール、FASTQC、TopHat(同2,3,4)](https://github.com/AJACS-training/AJACSa2/blob/master/omomo/)」  
 大桃 秀樹  
 (岩手医大)
 
 #### 2月26日(金)
-9:00～12:00 「[講習 2コマ(同5,6,7)](https://github.com/AJACS-training/AJACSa2/blob/master/nakazato/)」  
+9:00～12:00 「[Cufflinks、cummeRbund、DAVID(同5,6,7)](https://github.com/AJACS-training/AJACSa2/blob/master/nakazato/)」  
 仲里 猛留  
 (情報・システム研究機構ライフサイエンス統合データベースセンター)
 
