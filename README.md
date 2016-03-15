@@ -20,7 +20,7 @@ JSTのバイオサイエンスデータベースセンター(NBDC)では、統�
 
 ### プログラム
 ### 講習動画(YouTubeリスト)
- - [AJACSadvanced(AJACSa)三島2](https://www.youtube.com/playlist?list=PL0uaKHgcG00amtrHToabtgWy1n83V8LEP)
+ - [AJACSadvanced(AJACSa)三島2](https://www.youtube.com/playlist?list=PL0uaKHgcG00amtrHToabtgWy1n83V8LEP)  
 #### 2月25日(木)
 カリキュラム(DRY解析教本p10の「遺伝子発現解析」のシラバスをベースに実施予定)  
 10:00～11:30 「[オリエンテーション(内容的にはシラバスの1)](https://github.com/AJACS-training/AJACSa2/blob/master/bono/)」  
