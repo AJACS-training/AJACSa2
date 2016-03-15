@@ -39,32 +39,32 @@ GSM916973
 ```
 
 ### Slides
-![images/AJACSa2_morioka_01.jpg](images/AJACSa2_morioka_01.jpg)
+![images/AJACSa2_morioka_01.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_01.jpg)
 ---
 
-![images/AJACSa2_morioka_02.jpg](images/AJACSa2_morioka_02.jpg)
+![images/AJACSa2_morioka_02.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_02.jpg)
 ---
 
-![images/AJACSa2_morioka_03.jpg](images/AJACSa2_morioka_03.jpg)
+![images/AJACSa2_morioka_03.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_03.jpg)
 ---
 
-![images/AJACSa2_morioka_04.jpg](images/AJACSa2_morioka_04.jpg)
+![images/AJACSa2_morioka_04.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_04.jpg)
 ---
 
-![images/AJACSa2_morioka_05.jpg](images/AJACSa2_morioka_05.jpg)
+![images/AJACSa2_morioka_05.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_05.jpg)
 ---
 
-![images/AJACSa2_morioka_06.jpg](images/AJACSa2_morioka_06.jpg)
+![images/AJACSa2_morioka_06.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_06.jpg)
 ---
 
-![images/AJACSa2_morioka_07.jpg](images/AJACSa2_morioka_07.jpg)
+![images/AJACSa2_morioka_07.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_07.jpg)
 ---
 
-![images/AJACSa2_morioka_08.jpg](images/AJACSa2_morioka_08.jpg)
+![images/AJACSa2_morioka_08.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_08.jpg)
 ---
 
-![images/AJACSa2_morioka_09.jpg](images/AJACSa2_morioka_09.jpg)
+![images/AJACSa2_morioka_09.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_09.jpg)
 ---
 
-![images/AJACSa2_morioka_10.jpg](images/AJACSa2_morioka_10.jpg)
+![images/AJACSa2_morioka_10.jpg](https://raw.githubusercontent.com/AJACS-training/AJACSa2/master/morioka/images/AJACSa2_morioka_10.jpg)
 ---
